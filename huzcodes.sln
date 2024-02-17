@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PluginSrc", "PluginSrc", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestPluginAPI", "TestPluginAPI", "{4FD80DA8-2282-4117-B7DD-067BB6456DCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "huzcodes.Extensions.API", "huzcodes.Extensions.API\huzcodes.Extensions.API.csproj", "{69ED7036-6473-4D6C-8FCB-5B69DE074937}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{2E31DDFE-CDA1-47DE-9E41-4FCB33D14C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E31DDFE-CDA1-47DE-9E41-4FCB33D14C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E31DDFE-CDA1-47DE-9E41-4FCB33D14C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69ED7036-6473-4D6C-8FCB-5B69DE074937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69ED7036-6473-4D6C-8FCB-5B69DE074937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69ED7036-6473-4D6C-8FCB-5B69DE074937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69ED7036-6473-4D6C-8FCB-5B69DE074937}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2E31DDFE-CDA1-47DE-9E41-4FCB33D14C73} = {5FCCD5AA-1D9F-447F-973B-5E38D56B2823}
+		{69ED7036-6473-4D6C-8FCB-5B69DE074937} = {4FD80DA8-2282-4117-B7DD-067BB6456DCD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BC7FAFD-0EF9-43A0-B2ED-54CDCD80FD16}
