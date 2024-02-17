@@ -17,20 +17,36 @@ namespace huzcodes.Extensions.Exceptions
                 var errorFeature = context.Features.Get<IExceptionHandlerFeature>();
                 var exception = errorFeature!.Error;
 
-                if (!(exception is ResultException) && !(exception is CustomResultException<dynamic>))
-                    throw exception;
+                // handling for default exception
+                if (!(exception is ResultException) && !(exception is CustomResultException))
+                    errorContent = JsonSerializer.Serialize(new
+                    {
+                        StatusCode = context.Response.StatusCode,
+                        Message = exception.Message,
+                        InnerException = exception.InnerException,
+                        Data = exception.Data,
+                        Type = exception.GetType().Name
+                    });
 
-                if (exception is ResultException resultException)
+                // handling for ResultException
+                if (exception is ResultException)
                 {
-                    errorContent = JsonSerializer.Serialize(resultException);
-                    context.Response.StatusCode = resultException.ResultExceptionStatusCode;
+                    context.Response.StatusCode = ((ResultException)exception).ResultExceptionStatusCode;
+                    errorContent = JsonSerializer.Serialize(new
+                    {
+                        StatusCode = context.Response.StatusCode,
+                        Message = ((ResultException)exception).ResultExceptionMessage,
+                        Type = exception.GetType().Name
+                    });
                 }
 
-                if (exception is CustomResultException<dynamic> customResultException)
+                // handling for CustomResultException
+                if (exception is CustomResultException)
                 {
-                    errorContent = JsonSerializer.Serialize(customResultException);
+                    errorContent = JsonSerializer.Serialize(((dynamic)exception).CustomExceptionContract);
                     context.Response.StatusCode = (int)HttpStatusCode.ExpectationFailed;
                 }
+
 
                 context.Response.ContentType = "application/json";
                 await context.Response.WriteAsync(errorContent, System.Text.Encoding.UTF8);
