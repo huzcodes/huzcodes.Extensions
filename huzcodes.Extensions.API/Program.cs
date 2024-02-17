@@ -1,3 +1,5 @@
+using huzcodes.Extensions.Exceptions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +17,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// adding the exception handler extension registration
+app.AddExceptionHandlerExtension();
 
 app.UseHttpsRedirection();
 
