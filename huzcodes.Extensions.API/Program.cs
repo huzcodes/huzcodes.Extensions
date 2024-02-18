@@ -9,6 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// adding the registration of fluent validation from inside huzcodes exception extension plugin.
+builder.Services.AddFluentValidation(typeof(Program));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
