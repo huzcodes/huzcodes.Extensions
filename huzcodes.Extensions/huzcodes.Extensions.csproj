@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>huzcodes Extensions</Title>
+    <Title>huzcodes.Extensions</Title>
     <Authors>Ahmed Hussain (@huzcodes)</Authors>
     <Company>huzcodes</Company>
     <Description>NuGet Package Description
