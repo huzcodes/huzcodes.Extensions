@@ -1,9 +1,8 @@
 ﻿using FluentValidation;
-using MediatR;
 
 namespace huzcodes.Extensions.API.Models.ValidationUsingFluent
 {
-    public class FluentValidationRequest : IRequest
+    public class FluentValidationRequest
     {
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
