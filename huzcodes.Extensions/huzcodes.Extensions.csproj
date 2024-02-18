@@ -21,6 +21,7 @@ Additionally, the package includes fluent validation support, enabling you to ha
 
 To use huzcodes.Extensions, simply register the exception handler extension and, if needed, fluent validation in your application's program file. huzcodes.Extensions streamlines error handling, making your application more robust and easier to maintain.
 
+for more information on huzcodes.Extensions, please refer to https://github.com/huzcodes/huzcodes.Extensions 
 </Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>Huzcodes Logo.jpg</PackageIcon>
@@ -28,6 +29,12 @@ To use huzcodes.Extensions, simply register the exception handler extension and,
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/huzcodes/huzcodes.Extensions</RepositoryUrl>
     <PackageTags>Exception, Exception Handler, Error, error management</PackageTags>
+    <PackageProjectUrl>https://github.com/huzcodes/huzcodes.Extensions</PackageProjectUrl>
+    <Copyright>huzcodes</Copyright>
+    <PackageReleaseNotes>huzcodes.Extensions is a C# .NET 8 package that provides a global exception handler to enhance error handling in your applications. It offers two main classes, ResultException and CustomResultException, for managing exceptions and errors in a unified manner. ResultException allows you to throw exceptions with a specified error message and status code, while CustomResultException is designed for structured responses in case of failures.
+
+Additionally, the package includes fluent validation support, enabling you to handle validation errors seamlessly. By centralizing error management, huzcodes.Extensions simplifies error handling across different layers of your application.
+</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
