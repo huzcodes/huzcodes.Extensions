@@ -23,7 +23,7 @@ Additionally, the package includes fluent validation support, enabling you to ha
 
 Additionally, the package includes fluent validation support, enabling you to handle validation errors seamlessly. By centralizing error management, huzcodes.Extensions simplifies error handling across different layers of your application.
 </PackageReleaseNotes>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
