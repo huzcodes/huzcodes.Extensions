@@ -1,4 +1,5 @@
 using huzcodes.Extensions.Exceptions;
+using huzcodes.Extensions.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,10 @@ builder.Services.AddSwaggerGen();
 
 // adding the registration of fluent validation from inside huzcodes exception extension plugin.
 builder.Services.AddFluentValidation(typeof(Program));
+
+// adding huzcodes identity extension registration
+var oSigningKey = builder.Configuration["SigningKey"];
+builder.Services.AddAuthZ(oSigningKey!);
 
 var app = builder.Build();
 
@@ -29,5 +34,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.AddAuthZMiddleWare();
 
 app.Run();
