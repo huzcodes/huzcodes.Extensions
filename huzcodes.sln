@@ -9,7 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PluginSrc", "PluginSrc", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestPluginAPI", "TestPluginAPI", "{4FD80DA8-2282-4117-B7DD-067BB6456DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "huzcodes.Extensions.API", "huzcodes.Extensions.API\huzcodes.Extensions.API.csproj", "{69ED7036-6473-4D6C-8FCB-5B69DE074937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "huzcodes.Extensions.API", "huzcodes.Extensions.API\huzcodes.Extensions.API.csproj", "{69ED7036-6473-4D6C-8FCB-5B69DE074937}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PluginDocs", "PluginDocs", "{CEA792E5-AC53-4277-9196-AAEC74AA7E55}"
+	ProjectSection(SolutionItems) = preProject
+		PluginDocs\huzcodes-extensions-logo.png = PluginDocs\huzcodes-extensions-logo.png
+		PluginDocs\README.md = PluginDocs\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
