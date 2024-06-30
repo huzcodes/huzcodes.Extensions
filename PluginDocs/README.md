@@ -1,5 +1,5 @@
 # huzcodes.Extensions 
-<br>
+
 
 huzcodes.Extensions is a C# .NET 8 package that provides a global exception handler to enhance error handling in your applications. It offers two main classes, '**ResultException**' and '**CustomResultException**', for managing Extensions and errors in a unified manner. '**ResultException**' allows you to throw Extensions with a specified error message and status code, while '**CustomResultException**' is designed for structured responses in case of failures.
 
