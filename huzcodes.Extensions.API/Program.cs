@@ -35,6 +35,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// adding the huzcodes identity extension middleware
 app.AddAuthZMiddleWare();
 
 app.Run();
